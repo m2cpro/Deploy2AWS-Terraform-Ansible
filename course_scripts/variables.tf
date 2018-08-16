@@ -1,6 +1,6 @@
 variable "aws_region" {}
 variable "aws_profile" {}
-data "aws_availability_zones" "available" {}
+data "aws_availability_zones" "available" {} # Only available availability zones as not all regions have the same number of AZ
 variable "localip" {}
 variable "vpc_cidr" {}
 
